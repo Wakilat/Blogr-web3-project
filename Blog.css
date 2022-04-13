@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+
+:root {
+  --Light-red: hsl(356, 100%, 66%);
+  --Very-light-red: hsl(355, 100%, 74%);
+  --Very-dark-blue: hsl(208, 49%, 24%);
+  --White: hsl(0, 0%, 100%);
+  --Grayish-blue: hsl(240, 2%, 79%);
+  --Very-dark-grayish-blue: hsl(207, 13%, 34%);
+  --Very-dark-black-blue: hsl(240, 10%, 16%);
+  --Grad-Very-light-red: hsl(13, 100%, 72%);
+  --Grad-Light-red: hsl(353, 100%, 62%);
+  --Very-dark-gray-blue: hsl(237, 17%, 21%);
+  --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+  --FF-primary: "Ubuntu", sans-serif;
+  --FF-secondary: "Overpass", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  color: var(--White);
+}
+nav ul li {
+  font-size: 12px;
+}
+.bg-image {
+  background-image: url("/images/bg-pattern-intro-mobile.svg");
+  background-color: var(--Grad-Very-light-red);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom-left-radius: 3rem;
+  min-height: 20rem;
+}
+
+@media screen and (min-width: 376px) {
+  .phone img {
+    margin-top: -5rem;
+  }
+}
+
+@media screen and (min-width: 996px) {
+  .phone img {
+    display: inline-block;
+    margin-top: -90px;
+    max-height: 30rem;
+    width: auto;
+  }
+}
+
+.phone {
+  background-image: url("/images/bg-pattern-circles.svg");
+  background-color: var(--Very-dark-desaturated-blue);
+  margin-top: 10rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-top-right-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+}
+footer {
+  background-color: var(--Very-dark-black-blue);
+  border-top-right-radius: 4rem;
+}
+
+footer ul li {
+  display: block;
+}
+.button:hover {
+  background-color: var(--White);
+  color: var(--Very-light-red) !important;
+  font-weight: bolder !important;
+}
